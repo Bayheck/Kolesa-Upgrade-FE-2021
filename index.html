@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="show">
+            <img src="/src/assets/Hood.svg" alt="черное худи колеса" class="image" width="330" height="330">
+            <div class="photos">
+                <img src="/src/assets/First.svg" alt="девушка в белом худи" width="50" height="50">
+                <img class="active-preview" src="/src/assets/Second.svg" alt="черное худи колеса" width="50"
+                    height="50">
+                <img src="/src/assets/Third.svg" alt="парень в черном худи" width="50" height="50">
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                Футболка "Эволюционируй или сдохни"
+            </div>
+            <div class="top">
+                <div class="left">
+                    <div class="cost">
+                        100 баллов
+                    </div>
+                    <button class="button" type="button">
+                        Заказать
+                    </button>
+                </div>
+                <div class="right">
+                    <div class="balance">
+                        <div class="leftBalance">
+                            <div class="balance-text">Твой баланс:</div>
+                            <div class="numb">
+                                3 945 баллов
+                            </div>
+                        </div>
+                        <img class="shop" src="/src/assets/shopping.svg" alt="иконка пакетов">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="color">
+                    Цвета:
+                    <!-- Создать цветные квадратики не получилось :( -->
+                    <div class="radiocolor">
+                        <input label="Синий" type="radio" id="color-1" name="color" value="blue" checked />
+                        <input label="Бежевый" type="radio" id="color-2" name="color" value="beige" />
+                        <input label="Серый" type="radio" id="color-3" name="color" value="grey" />
+                    </div>
+                </div>
+
+                <div class="size">
+                    Размер:
+                    <div class="radio">
+                        <input label="S" type="radio" id="s-size" name="size" value="S" checked />
+                        <input label="M" type="radio" id="m-size" name="size" value="M" />
+                        <input label="L" type="radio" id="l-size" name="size" value="L" />
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="material">
+                        Детали:
+                        <div class="words">
+                            Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
+                        </div>
+                    </div>
+                    <div class="howChooseSize">
+                        Как выбрать размер:
+                        <div class="howChooseText">
+                            Написать дяде Рику для уточнения.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div id="app"></div>
+    <script type="module" src="/src/js/main.js"></script> -->
+</body>
+
 </html>
