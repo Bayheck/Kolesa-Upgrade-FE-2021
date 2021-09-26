@@ -23,13 +23,11 @@ body {
     display: flex;
     overflow: auto;
     box-sizing: border-box;
+    padding: 64px 56px;
 }
 
 .show {
     display: inline-block;
-    margin-top: 56px;
-    margin-left: 56px;
-    margin-bottom: 136px;
 }
 
 .photos {
@@ -61,7 +59,6 @@ body {
     flex: 1;
     display: inline-block;
     vertical-align: top;
-    margin: 64px 56px 64px 26px;
     position: relative;
 }
 
@@ -69,7 +66,7 @@ h4 {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
 }
 
 .money {
