@@ -38,8 +38,8 @@ body {
 
 .shop_icon {
     background-image: url('../assets/icons/Icon_shopping.svg');
-    width: 40px;
-    height: 24px;
+    width: 45px;
+    height: 42px;
 }
 
 .show {
@@ -84,6 +84,7 @@ body {
 .money {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .cost {
@@ -103,20 +104,22 @@ body {
     background-color: #2a81dd;
     color: white;
     border-radius: 8px;
-    margin-bottom: 24px;
     cursor: pointer;
 }
 
 .balance {
     width: 196px;
-    height: 68px;
     margin: 0 0 0 0;
     background-color: #f0fafd;
     display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 8px 16px;
+    box-sizing: border-box;
 }
 
 .leftBalance {
-    display: inline;
+    width: 140px;
 }
 
 .shop {
@@ -125,11 +128,18 @@ body {
 
 .balance-text {
     display: inline-block;
+    word-break: break-word;
     color: #888b94;
 }
 
 .numb {
     display: inline-block;
+    margin-top: 4px;
+    word-break: break-word;
+}
+
+.buy {
+    margin-top: 24px;
 }
 
 .color {
