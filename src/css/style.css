@@ -17,7 +17,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     border-radius: 16px;
     box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
     display: flex;
