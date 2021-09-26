@@ -26,8 +26,18 @@ body {
     padding: 64px 56px;
 }
 
+.exit_icon {
+    background-image: url('../assets/icons/Icon_exit.svg');
+    width: 18.67px;
+    height: 18.67px;
+    position: absolute;
+    right: 30.67px;
+    top: 30.67px;
+}
+
 .show {
     display: inline-block;
+    margin-right: 24px;
 }
 
 .photos {
