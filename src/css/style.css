@@ -105,6 +105,7 @@ body {
     color: white;
     border-radius: 8px;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .balance {
@@ -167,39 +168,70 @@ body {
     margin-top: 4px;
 }
 
-.radio {
+.sizeWrapper {
     display: flex;
     margin-top: 8px;
 }
 
-.radio input {
-    width: 40px;
-    height: 40px;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 8px;
-    background: white;
-    color: #2a81dd;
-    transition: all 100ms linear;
-    border: 1px solid rgba(28, 24, 25, 0.1);
+.sizeInputWrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
 }
 
-.radio input:checked {
-    background-color: #d6ecfb;
-    color: #1c1819;
+.colorLabel {
+    display: flex;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 8px 8px 0;
+    box-sizing: border-box;
+    margin-right: 8px;
+    min-width: 40px;
+    border: 1px solid #d4d4da;
 }
 
-.radio input::before {
-    content: attr(label);
-    display: inline-block;
-    text-align: center;
-    width: 100%;
+.sizeLabel {
+    display: flex;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 16px 8px 8px;
+    box-sizing: border-box;
+    margin-right: 8px;
+    min-width: 40px;
+    border: 1px solid #d4d4da;
+}
+
+.sizeLabelBox {
+    display: block;
+    width: 23px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.blue {
+    background: #00458a;
+}
+
+.beige {
+    background: #efe8d8;
+}
+
+.grey {
+    background: #d4d4da;
+}
+
+.radio {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sizeLabelSpan {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2a81dd;
 }
 
 .radiocolor {
@@ -207,32 +239,19 @@ body {
     margin-top: 8px;
 }
 
-.radiocolor input {
-    width: 96px;
-    height: 40px;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 8px;
-    background: white;
-    color: #2a81dd;
-    transition: all 100ms linear;
-    border: 1px solid rgba(28, 24, 25, 0.1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
+.checked {
+    background: #d6ecfb;
+    border: none;
 }
 
-.radiocolor input:checked {
-    background-color: #d6ecfb;
+.checked .sizeLabelSpan {
     color: #1c1819;
 }
 
-.radiocolor input::before {
-    content: attr(label);
-    display: inline-block;
-    text-align: center;
-    width: 100%;
+.colorSize {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }

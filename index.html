@@ -58,20 +58,60 @@
             </div>
             <div class="buy">
                 <div class="color">
-                    Цвета:
+                    <span class="colorSize">Цвета:</span>
                     <div class="radiocolor">
-                        <input label="Синий" type="radio" id="color-1" name="color" value="blue" checked />
-                        <input label="Бежевый" type="radio" id="color-2" name="color" value="beige" />
-                        <input label="Серый" type="radio" id="color-3" name="color" value="grey" />
+                        <label class="colorLabel  checked">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" type="radio" id="color-1" name="color" value="blue" checked />
+                                <span class="sizeLabelBox blue"></span>
+                            </span>
+                            <span class="sizeLabelSpan">Синий</span>
+                        </label>
+
+                        <label class="sizeLabel">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" type="radio" id="color-2" name="color" value="beige" />
+                                <span class="sizeLabelBox  beige"></span>
+                            </span>
+                            <span class="sizeLabelSpan">Бежевый</span>
+                        </label>
+
+                        <label class="sizeLabel">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" type="radio" id="color-3" name="color" value="grey" />
+                                <span class="sizeLabelBox  grey"></span>
+                            </span>
+                            <span class="sizeLabelSpan">Серый</span>
+                        </label>
                     </div>
                 </div>
 
                 <div class="size">
-                    Размер:
-                    <div class="radio">
-                        <input label="S" type="radio" id="s-size" name="size" value="S" checked />
-                        <input label="M" type="radio" id="m-size" name="size" value="M" />
-                        <input label="L" type="radio" id="l-size" name="size" value="L" />
+                    <span class="colorSize">Размер:</span>
+                    <div class="sizeWrapper">
+                        <label class="sizeLabel  checked">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" label="S" type="radio" id="s-size" name="size" value="S" checked />
+
+                            </span>
+                            <span class="sizeLabelSpan">S</span>
+                        </label>
+
+                        <label class="sizeLabel">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" label="M" type="radio" id="m-size" name="size" value="M" />
+
+                            </span>
+                            <span class="sizeLabelSpan">M</span>
+                        </label>
+
+                        <label class="sizeLabel">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" label="L" type="radio" id="l-size" name="size" value="L" />
+
+                            </span>
+                            <span class="sizeLabelSpan">L</span>
+                        </label>
                     </div>
                 </div>
                 <div class="details">
