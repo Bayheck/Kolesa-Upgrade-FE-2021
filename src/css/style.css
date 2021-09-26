@@ -23,7 +23,8 @@ body {
     display: flex;
     overflow: auto;
     box-sizing: border-box;
-    padding: 64px 56px;
+    padding: 56px;
+    min-width: 709px;
 }
 
 .exit_icon {
@@ -35,8 +36,13 @@ body {
     top: 30.67px;
 }
 
+.shop_icon {
+    background-image: url('../assets/icons/Icon_shopping.svg');
+    width: 40px;
+    height: 24px;
+}
+
 .show {
-    display: inline-block;
     margin-right: 24px;
 }
 
@@ -66,17 +72,13 @@ body {
 
 .content {
     width: 573px;
-    flex: 1;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
 }
 
-h4 {
+.content h4 {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin: 0 0 8px 0;
+    margin: 8px 0 8px 0;
 }
 
 .money {
@@ -114,7 +116,7 @@ h4 {
 }
 
 .leftBalance {
-    display: inline-block;
+    display: inline;
 }
 
 .shop {
@@ -122,37 +124,19 @@ h4 {
 }
 
 .balance-text {
-    margin: 8px 0 4px 16px;
     display: inline-block;
     color: #888b94;
 }
 
 .numb {
-    margin: 0 0 8px 16px;
     display: inline-block;
-    overflow: hidden;
 }
 
 .color {
-    height: 72px;
-    width: 322px;
-    left: 0;
-    top: 0;
-    border-radius: 0;
     margin-bottom: 24px;
 }
 
-.size {
-    height: 72px;
-    width: 100%;
-}
-
 .details {
-    height: 128px;
-    width: 568px;
-    left: 0;
-    top: 192px;
-    border-radius: 0;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -160,7 +144,7 @@ h4 {
 }
 
 .material {
-    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 .words {
@@ -241,14 +225,4 @@ h4 {
     display: inline-block;
     text-align: center;
     width: 100%;
-}
-
-.bluecolor {
-    width: 23px;
-    height: 24px;
-    background: #00458a;
-    border-radius: 4px;
-    position: relative;
-    top: 10px;
-    left: 40px;
 }
