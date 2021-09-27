@@ -27,11 +27,11 @@ body {
 
 .exit_icon {
     background-image: url('../assets/icons/Icon_exit.svg');
-    width: 18.67px;
-    height: 18.67px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    right: 30.67px;
-    top: 30.67px;
+    right: 32px;
+    top: 32px;
 }
 
 .shop_icon {
