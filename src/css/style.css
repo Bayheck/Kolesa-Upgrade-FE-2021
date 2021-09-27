@@ -27,11 +27,15 @@ body {
 
 .exit_icon {
     background-image: url('../assets/icons/Icon_exit.svg');
+    background-color: white;
     width: 20px;
     height: 20px;
     position: absolute;
     right: 32px;
     top: 32px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .shop_icon {
