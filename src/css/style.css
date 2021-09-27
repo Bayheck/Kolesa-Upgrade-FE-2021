@@ -26,7 +26,7 @@ body {
 }
 
 .exit_icon {
-    background-image: url('../assets/icons/Icon_exit.svg');
+    background-image: url('../assets/icons/Icon_exit.jpg');
     background-color: white;
     width: 20px;
     height: 20px;
@@ -39,7 +39,7 @@ body {
 }
 
 .shop_icon {
-    background-image: url('../assets/icons/Icon_shopping.svg');
+    background-image: url('../assets/icons/Icon_shopping.jpg');
     width: 45px;
     height: 42px;
 }
