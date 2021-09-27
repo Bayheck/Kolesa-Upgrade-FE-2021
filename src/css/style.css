@@ -21,8 +21,6 @@ body {
     border-radius: 16px;
     box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
     display: flex;
-    overflow: auto;
-    box-sizing: border-box;
     padding: 56px;
     min-width: 709px;
 }
