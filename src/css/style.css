@@ -176,6 +176,12 @@ body {
 }
 
 .sizeInputWrapper {
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.colorInputWrapper {
     display: flex;
 }
 
@@ -183,7 +189,7 @@ body {
     display: flex;
     height: 40px;
     border-radius: 8px;
-    padding: 8px 8px 8px 0;
+    padding: 8px 12px 8px 0;
     box-sizing: border-box;
     margin-right: 8px;
     min-width: 40px;
@@ -192,9 +198,11 @@ body {
 
 .sizeLabel {
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
+    width: 40px;
     border-radius: 8px;
-    padding: 8px 16px 8px 8px;
     box-sizing: border-box;
     margin-right: 8px;
     min-width: 40px;
