@@ -146,7 +146,7 @@ body {
 }
 
 .color {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .details {
@@ -173,6 +173,13 @@ body {
 .sizeWrapper {
     display: flex;
     margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.radiocolor {
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
 }
 
 .sizeInputWrapper {
@@ -192,6 +199,7 @@ body {
     padding: 8px 12px 8px 0;
     box-sizing: border-box;
     margin-right: 8px;
+    margin-bottom: 8px;
     min-width: 40px;
     border: 1px solid #d4d4da;
 }
@@ -205,6 +213,7 @@ body {
     border-radius: 8px;
     box-sizing: border-box;
     margin-right: 8px;
+    margin-bottom: 8px;
     min-width: 40px;
     border: 1px solid #d4d4da;
 }
@@ -242,11 +251,6 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #2a81dd;
-}
-
-.radiocolor {
-    display: flex;
-    margin-top: 8px;
 }
 
 .checked {
