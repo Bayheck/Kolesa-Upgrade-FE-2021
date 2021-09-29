@@ -6,3 +6,73 @@
     color: #2c3e50;
     margin-top: 60px;
 }
+
+.main {
+    display: flex;
+    padding: 34px 90px 0 32px;
+}
+
+.main_content {
+    flex: 1;
+}
+
+.search_account {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 308px;
+    height: 44px;
+    background: #f2f2f3;
+    padding-left: 20px;
+    border-radius: 8px;
+}
+
+.search_button {
+    background-image: url(../assets/Icon\ shape.svg);
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: #f2f2f3;
+    margin-right: 20px;
+}
+
+.search input {
+    border: none;
+    background: #f2f2f3;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.menu_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_list li {
+    margin-bottom: 26px;
+}
+
+.chosen::before {
+    width: 1px;
+    height: 2px;
+    background: #2a81dd;
+    color: #2a81dd;
+    border-radius: 10px;
+}
+
+.chosen {
+    /* border-left: 10px solid #5e37bc; */
+}
+
+footer {
+    background-color: black;
+}
