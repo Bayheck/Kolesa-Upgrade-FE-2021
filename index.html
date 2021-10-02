@@ -5,47 +5,423 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Vite App</title>
 </head>
 
 <body>
-    <div class="main">
-        <div class="main_bar">
-            <div class="kolesa_logo">
-                Kolesa
+    <div class="wrapper">
+        <div class="main">
+            <div class="main_bar">
+                <div class="kolesa_logo">
+                    <a><img src="src/assets/logo.svg" alt="kolesa_logo" width="215px" height="35px"></a>
+                </div>
+                <ul class="menu_list">
+                    <li><a>Оргсхема</a></li>
+                    <li><a>Kolesa <span class="massive">Team</span></a></li>
+                    <li class="chosen"><a>Kolesa Shop</a></li>
+                    <li><a>Картина компании</a></li>
+                    <li><a>Новости</a></li>
+                    <li><a>Education</a></li>
+                    <li><a>Guidelines</a></li>
+                    <li><a>Библиотека</a></li>
+                    <li><a>FAQ</a></li>
+                </ul>
             </div>
-            <ul class="menu_list">
-                <li><a>Оргсхема</a></li>
-                <li><a>Kolesa Team</a></li>
-                <li class="chosen"><a>Kolesa Shop</a></li>
-                <li><a>Картина компании</a></li>
-                <li><a>Новости</a></li>
-                <li><a>Education</a></li>
-                <li><a>Guidelines</a></li>
-                <li><a>Библиотека</a></li>
-                <li><a>FAQ</a></li>
-            </ul>
-        </div>
-        <div class="main_content">
-            <div class="search_account">
-                <form class="search">
-                    <button class="search_button" type="button"></button>
-                    <input type="text" placeholder="Поиск">
-                </form>
-                <div class="account">
-                    Rick
+            <div class="main_content">
+                <div class="search_account">
+                    <form class="search">
+                        <button class="search_button" type="button"><label for="search"></label></button>
+                        <input id="search" type="text" placeholder="Поиск">
+                    </form>
+                    <a>
+                        <div class="account">
+                            <img src="src/assets/acc.jpg" alt="аватар профиля" width="44px" height="44px">
+                            <div class="account_name">
+                                <h4>Мортиджан</h4>
+                                <span>300 баллов</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products">
+                    <div class="banner">
+                        <div class="attention">
+                            это пример баннера нельзя использовать нужно попросить у Графического отдела
+                        </div>
+                        <img src="src/assets/Баннер.jpg" alt="баннер с акцией">
+                    </div>
+                    <div class="hot_buttons">
+                        <a class="nostyle">
+                            <div class="hot_buttons_primary">
+                                <div class="icon_text">
+                                    <div class="primary_icon"></div>
+                                    Получить Баллы
+                                </div>
+                            </div>
+                        </a>
+                        <a class="nostyle" >
+                            <div class="hot_buttons_secondary">
+                                <div class="secondary_icon"></div>
+                                Как Получить Баллы
+                            </div>
+                        </a>
+                        <a class="nostyle" >
+                            <div class="hot_buttons_third">
+                                <div class="third_icon"></div>
+                                Подарить Баллы
+                            </div>
+                        </a>
+                    </div>
+                    <div class="radio_collection">
+                        <div class="radio_button">
+                            <input id="radio-1" type="radio" name="radio" value="everything" checked>
+                            <label for="radio-1">Все товары</label>
+                        </div>
+                        <div class="radio_button">
+                            <input id="radio-2" type="radio" name="radio" value="clothes">
+                            <label for="radio-2">Одежда</label>
+                        </div>
+                        <div class="radio_button">
+                            <input id="radio-3" type="radio" name="radio" value="acc">
+                            <label for="radio-3">Аксессуары</label>
+                        </div>
+                    </div>
+                    <div class="products_gallery">
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                                <span class="badge">NEW</span>
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                                <span class="badge">NEW</span>
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./src/assets/tshirt.jpg" alt="Футболка" width ="330px" height="330px">
+                            </div>
+
+                            <div class="description">
+                                <div class="price">
+                                    220 баллов
+                                </div>
+                                <h3 class="title">
+                                    Футболка "Эволюционируй или ...
+                                </h3>
+                                <div class="sizes">
+                                    Размеры S/M/L
+                                </div>
+                                <div class="butcontain">
+                                    <button
+                                    class="button"
+                                    type="button"
+                                    >
+                                    Заказать
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="products">
-                productss
-            </div>
-        </div>
 
+        </div>
+        <footer>
+            <div class="info">
+                <div class="contacts">
+                    <div class="kolesa_icon">
+                        <a>© Kolesa Group</a>
+                    </div>
+                    <div class="contact_icons">
+                        <a><div class="inst"></div></a>
+                        <a><div class="ytb"></div></a>
+                        <a><div class="vk"></div></a>
+                    </div>
+                </div>
+                <div class="suggestion">
+                    <div class="suggestion_text">
+                        Есть идеи что улучшить?<br>
+                        Не знаешь, с кем решить проблему?
+                    </div>
+                    <button class="suggest" type="button">Написать</button>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer>
-        Contacts
-    </footer>
+
 </body>
 
 </html>
