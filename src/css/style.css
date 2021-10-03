@@ -6,3 +6,266 @@
     color: #2c3e50;
     margin-top: 60px;
 }
+
+body {
+    background-color: #888b94;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.modal {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
+    display: flex;
+    padding: 56px;
+    min-width: 709px;
+}
+
+.exit_icon {
+    background-image: url('../assets/icons/Icon_exit.jpg');
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.shop_icon {
+    background-image: url('../assets/icons/Icon_shopping.jpg');
+    width: 45px;
+    height: 42px;
+}
+
+.show {
+    margin-right: 24px;
+}
+
+.photos {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.galleryButtons {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.galleryButtons img {
+    border-radius: 8px;
+}
+
+.active-preview {
+    border: 1px solid #2a81dd;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.content {
+    width: 573px;
+}
+
+.content h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 8px 0 8px 0;
+}
+
+.money {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cost {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 134px;
+    height: 36px;
+    border: 0;
+    background-color: #2a81dd;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.balance {
+    width: 196px;
+    margin: 0 0 0 0;
+    background-color: #f0fafd;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+.leftBalance {
+    width: 140px;
+}
+
+.shop {
+    vertical-align: middle;
+}
+
+.balance-text {
+    display: inline-block;
+    word-break: break-word;
+    color: #888b94;
+}
+
+.numb {
+    display: inline-block;
+    margin-top: 4px;
+    word-break: break-word;
+}
+
+.buy {
+    margin-top: 24px;
+}
+
+.color {
+    margin-bottom: 16px;
+}
+
+.details {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.material {
+    margin-top: 24px;
+}
+
+.words {
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.howChooseText {
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.sizeWrapper {
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.radiocolor {
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.sizeInputWrapper {
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.colorInputWrapper {
+    display: flex;
+}
+
+.colorLabel {
+    display: flex;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 12px 8px 0;
+    box-sizing: border-box;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    min-width: 40px;
+    border: 1px solid #d4d4da;
+}
+
+.sizeLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    min-width: 40px;
+    border: 1px solid #d4d4da;
+}
+
+.sizeLabelBox {
+    display: block;
+    width: 23px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.blue {
+    background: #00458a;
+}
+
+.beige {
+    background: #efe8d8;
+}
+
+.grey {
+    background: #d4d4da;
+}
+
+.radio {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sizeLabelSpan {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2a81dd;
+}
+
+.checked {
+    background: #d6ecfb;
+    border: none;
+}
+
+.checked .sizeLabelSpan {
+    color: #1c1819;
+}
+
+.colorSize {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
