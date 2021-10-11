@@ -1,139 +1,162 @@
-/* eslint-disable eqeqeq */
 const clothes = [
     {
-        id:      0,
-        title:   'Классная футболка',
-        price:   333,
-        isNew:   false,
-        img:     './src/assets/tshirt.jpg',
-        details: 'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        id:       0,
+        title:    'Классная футболка',
+        price:    333,
+        isNew:    false,
+        img:      './src/assets/tshirt.jpg',
+        details:  'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        material: 'true',
     },
     {
-        id:      1,
-        title:   'Классное худи',
-        price:   666,
-        isNew:   true,
-        img:     './src/assets/hood.jpg',
-        details: 'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
+        id:       1,
+        title:    'Классное худи',
+        price:    666,
+        isNew:    true,
+        img:      './src/assets/hood.jpg',
+        details:  'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
+        material: true,
     },
     {
-        id:      2,
-        title:   'Классная красная футболка',
-        price:   206,
-        isNew:   true,
-        img:     './src/assets/redshirt.png',
-        details: 'Удобная красная футболка для дома',
+        id:       2,
+        title:    'Классная красная футболка',
+        price:    206,
+        isNew:    true,
+        img:      './src/assets/redshirt.png',
+        details:  'Удобная красная футболка для дома',
+        material: true,
     },
     {
-        id:      3,
-        title:   'Классная футболка',
-        price:   218,
-        isNew:   false,
-        img:     './src/assets/tshirt.jpg',
-        details: 'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        id:       3,
+        title:    'Классная футболка',
+        price:    218,
+        isNew:    false,
+        img:      './src/assets/tshirt.jpg',
+        details:  'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        material: true,
     },
     {
-        id:      4,
-        title:   'Классная футболка',
-        price:   3433,
-        isNew:   false,
-        img:     './src/assets/tshirt.jpg',
-        details: 'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        id:       4,
+        title:    'Классная футболка',
+        price:    3433,
+        isNew:    false,
+        img:      './src/assets/tshirt.jpg',
+        details:  'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        material: true,
     },
     {
-        id:      5,
-        title:   'Классная футболка',
-        price:   6636,
-        isNew:   false,
-        img:     './src/assets/tshirt.jpg',
-        details: 'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        id:       5,
+        title:    'Классная футболка',
+        price:    6636,
+        isNew:    false,
+        img:      './src/assets/tshirt.jpg',
+        details:  'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        material: true,
     },
     {
-        id:      6,
-        title:   'Классная футболка',
-        price:   2026,
-        isNew:   false,
-        img:     './src/assets/tshirt.jpg',
-        details: 'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        id:       6,
+        title:    'Классная футболка',
+        price:    2026,
+        isNew:    false,
+        img:      './src/assets/tshirt.jpg',
+        details:  'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        material: true,
     },
     {
-        id:      7,
-        title:   'Классная футболка',
-        price:   2181,
-        isNew:   false,
-        img:     './src/assets/tshirt.jpg',
-        details: 'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        id:       7,
+        title:    'Классная футболка',
+        price:    2181,
+        isNew:    false,
+        img:      './src/assets/tshirt.jpg',
+        details:  'Брендированная футболка от Qazaq Republic. Материал хлопок...',
+        material: true,
     },
 ];
 
 const accessories = [
     {
-        id:      8,
-        title:   'Классная кружка',
-        price:   2000,
-        isNew:   true,
-        img:     './src/assets/bottle.jpg',
-        details: 'Бутылка для воды струбочкой',
+        id:       8,
+        title:    'Классная кружка',
+        price:    2000,
+        isNew:    true,
+        img:      './src/assets/bottle.jpg',
+        details:  'Бутылка для воды струбочкой',
+        material: false,
     },
     {
-        id:      9,
-        title:   'Классная игрушка',
-        price:   5000,
-        isNew:   true,
-        img:     './src/assets/horsetoy.png',
-        details: 'Игрушка для детей',
+        id:       9,
+        title:    'Классная игрушка',
+        price:    5000,
+        isNew:    true,
+        img:      './src/assets/horsetoy.png',
+        details:  'Игрушка для детей',
+        material: false,
     },
     {
-        id:      10,
-        title:   'Классная кружка',
-        price:   2500,
-        isNew:   false,
-        img:     './src/assets/bottle.jpg',
-        details: 'Бутылка для воды струбочкой',
+        id:       10,
+        title:    'Классная кружка',
+        price:    2500,
+        isNew:    false,
+        img:      './src/assets/bottle.jpg',
+        details:  'Бутылка для воды струбочкой',
+        material: false,
     },
     {
-        id:      11,
-        title:   'Классная кружка',
-        price:   2200,
-        isNew:   false,
-        img:     './src/assets/bottle.jpg',
-        details: 'Бутылка для воды струбочкой',
+        id:       11,
+        title:    'Классная кружка',
+        price:    2200,
+        isNew:    false,
+        img:      './src/assets/bottle.jpg',
+        details:  'Бутылка для воды струбочкой',
+        material: false,
     },
     {
-        id:      12,
-        title:   'Классная кружка',
-        price:   1900,
-        isNew:   false,
-        img:     './src/assets/bottle.jpg',
-        details: 'Бутылка для воды струбочкой',
+        id:       12,
+        title:    'Классная кружка',
+        price:    1900,
+        isNew:    false,
+        img:      './src/assets/bottle.jpg',
+        details:  'Бутылка для воды струбочкой',
+        material: false,
     },
     {
-        id:      13,
-        title:   'Классная кружка',
-        price:   3000,
-        isNew:   false,
-        img:     './src/assets/bottle.jpg',
-        details: 'Бутылка для воды струбочкой',
+        id:       13,
+        title:    'Классная кружка',
+        price:    3000,
+        isNew:    false,
+        img:      './src/assets/bottle.jpg',
+        details:  'Бутылка для воды струбочкой',
+        material: false,
     },
     {
-        id:      14,
-        title:   'Классная кружка',
-        price:   4500,
-        isNew:   false,
-        img:     './src/assets/bottle.jpg',
-        details: 'Бутылка для воды струбочкой',
+        id:       14,
+        title:    'Классная кружка',
+        price:    4500,
+        isNew:    false,
+        img:      './src/assets/bottle.jpg',
+        details:  'Бутылка для воды струбочкой',
+        material: false,
     },
     {
-        id:      15,
-        title:   'Классная кружка',
-        price:   999,
-        isNew:   false,
-        img:     './src/assets/bottle.jpg',
-        details: 'Бутылка для воды струбочкой',
+        id:       15,
+        title:    'Классная кружка',
+        price:    999,
+        isNew:    false,
+        img:      './src/assets/bottle.jpg',
+        details:  'Бутылка для воды струбочкой',
+        material: false,
     },
 ];
 
-const makeProductCard = (title, image, price, isNew, id) => ` <div class="card" data-index = ${id}>
+function onOverlay() {
+    document.getElementById('overlay').style.display = 'block';
+}
+
+function offOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+}
+
+const makeProductCard = (title, image, price, isNew, id) => ` <div class="card" data-index = "${id}">
     <div class="image">
         <img src="${image}" alt="Футболка" width ="330px" height="330px">
         ${isNew ? '<span class="badge">NEW</span>' : ''}
@@ -162,7 +185,7 @@ const makeProductCard = (title, image, price, isNew, id) => ` <div class="card" 
 </div>`;
 
 const makeModalWindow = ({
-    title, img, price, details, id,
+    title, img, price, details, material,
 }) => `
 <div class="modal">
 <button type="button" class="exit_icon">
@@ -274,7 +297,7 @@ const makeModalWindow = ({
                 </div>
             </div>
             <div class="material">
-                ${id >= 8 ? '' : `Как выбрать размер:<div class="howChooseText">
+                ${!material ? '' : `Как выбрать размер:<div class="howChooseText">
                 Написать дяде Рику для уточнения.</div>`}
             </div>
         </div>
@@ -283,7 +306,7 @@ const makeModalWindow = ({
 </div>
 `;
 
-const compare = (a, b) => {
+const sortByNew = (a, b) => {
     if (a.isNew && b.isNew) {
         return 0;
     }
@@ -295,9 +318,39 @@ const compare = (a, b) => {
     return -1;
 };
 
-// initial setup
-clothes.sort(compare);
-clothes.forEach((card) => {
+const merged = accessories.concat(clothes);
+
+function closeModal(e) {
+    if (e.target.closest('.exit_icon')) {
+        offOverlay();
+        e.target.closest('.exit_icon').parentNode.parentNode.remove();
+    }
+}
+
+function openModal(event) {
+    onOverlay();
+    const { index } = event.target.closest('.card').dataset;
+
+    const modal = makeModalWindow(merged.find(x => `${x.id}` === index));
+    const div = document.createElement('div');
+
+    div.innerHTML = modal;
+    div.addEventListener('click', (e) => {
+        closeModal(e);
+        div.removeEventListener('click', closeModal);
+    });
+    document.querySelector('body').append(div);
+}
+
+const modalCreator = () => {
+    document.querySelectorAll('.card').forEach((card) => {
+        card.addEventListener('click', openModal);
+    });
+};
+
+// initial render of all products category
+merged.sort(sortByNew);
+merged.forEach((card) => {
     const {
         title, price, isNew, img, id,
     } = card;
@@ -306,69 +359,38 @@ clothes.forEach((card) => {
     document.querySelector('.js_gallery').innerHTML += cardHtml;
 });
 
-document.querySelectorAll('.js_radio_button').forEach((button) => {
-    button.addEventListener('click', (event) => {
-        const buttoner = event.target;
-        const categoryKey = buttoner.dataset.key;
+modalCreator();
 
-        if (categoryKey === 'clothes') {
-            document.querySelector('.js_gallery').innerHTML = '';
-            clothes.sort(compare);
-            clothes.forEach((card) => {
-                const {
-                    title, price, isNew, img, id,
-                } = card;
-                const cardHtml = makeProductCard(title, img, price, isNew, id);
+const cardsDisplay = (event) => {
+    if (event.pointerId === -1) {
+        return;
+    }
 
-                document.querySelector('.js_gallery').innerHTML += cardHtml;
-            });
-        }
+    const categoryKey = event.target.dataset.key;
+    let cards;
 
-        if (categoryKey === 'accessories') {
-            document.querySelector('.js_gallery').innerHTML = '';
-            accessories.sort(compare);
-            accessories.forEach((card) => {
-                const {
-                    title, price, isNew, img, id,
-                } = card;
-                const cardHtml = makeProductCard(title, img, price, isNew, id);
-
-                document.querySelector('.js_gallery').innerHTML += cardHtml;
-            });
-        }
-
-        if (categoryKey === 'all') {
-            document.querySelector('.js_gallery').innerHTML = '';
-            const merged = accessories.concat(clothes);
-
-            merged.sort(compare);
-            merged.forEach((card) => {
-                const {
-                    title, price, isNew, img, id,
-                } = card;
-                const cardHtml = makeProductCard(title, img, price, isNew, id);
-
-                document.querySelector('.js_gallery').innerHTML += cardHtml;
-            });
-        }
-    });
-});
-
-document.addEventListener('click', (e) => {
-    const { index } = e.target.closest('.card').dataset;
-    let modal;
-
-    if (index >= clothes.length) {
-        modal = makeModalWindow(accessories.find(x => x.id.toString(10) === index));
+    if (categoryKey === 'clothes') {
+        clothes.sort(sortByNew);
+        cards = clothes;
+    } else if (categoryKey === 'accessories') {
+        accessories.sort(sortByNew);
+        cards = accessories;
     } else {
-        modal = makeModalWindow(clothes.find(x => x.id.toString(10) === index));
+        cards = merged;
     }
 
-    document.querySelector('body').innerHTML += modal;
-});
+    document.querySelector('.js_gallery').innerHTML = '';
+    cards.forEach((card) => {
+        const {
+            title, price, isNew, img, id,
+        } = card;
+        const cardHtml = makeProductCard(title, img, price, isNew, id);
 
-document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('exit_icon')) {
-        e.target.parentElement.remove();
-    }
+        document.querySelector('.js_gallery').innerHTML += cardHtml;
+    });
+    modalCreator();
+};
+
+document.querySelectorAll('.js_radio_button').forEach((button) => {
+    button.addEventListener('click', cardsDisplay);
 });
