@@ -342,7 +342,7 @@ const openModal = (event) => {
     document.querySelector('body').append(div);
 };
 
-const modalCreator = () => {
+const addCardClickEventListener = () => {
     document.querySelectorAll('.card').forEach((card) => {
         card.addEventListener('click', openModal);
     });
@@ -359,18 +359,16 @@ merged.forEach((card) => {
     document.querySelector('.js_gallery').innerHTML += cardHtml;
 });
 
-modalCreator();
+addCardClickEventListener();
 
 const cardsDisplay = (event) => {
     const categoryKey = event.target.dataset.key;
     let cards;
 
     if (categoryKey === 'clothes') {
-        clothes.sort(sortByNew);
-        cards = clothes;
+        cards = [...clothes].sort(sortByNew);
     } else if (categoryKey === 'accessories') {
-        accessories.sort(sortByNew);
-        cards = accessories;
+        cards = [...accessories].sort(sortByNew);
     } else {
         cards = merged;
     }
@@ -384,7 +382,7 @@ const cardsDisplay = (event) => {
 
         document.querySelector('.js_gallery').innerHTML += cardHtml;
     });
-    modalCreator();
+    addCardClickEventListener();
 };
 
 document.querySelectorAll('.category').forEach((button) => {
