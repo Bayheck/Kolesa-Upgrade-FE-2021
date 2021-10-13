@@ -6,14 +6,24 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
+
     <title>Vite App</title>
 </head>
 
 <body>
+
     <div id="overlay"></div>
+
+
+
     <div class="wrapper">
         <div class="main">
             <div class="main_bar">
@@ -122,7 +132,132 @@
         </footer>
     </div>
 
+
     <script src="./src/js/main.js"></script>
+
+
+    <div class="modal">
+        <button type="button" class="exit_icon">
+        </button>
+
+        <div class="show">
+            <img src="/src/assets/Hood.jpg" alt="черное худи колеса" class="image" width="330" height="330">
+            <div class="photos">
+                <button type="button" class="galleryButtons">
+                    <img src="/src/assets/Woman.jpg" alt="девушка в белом худи" width="50px" height="50px">
+                </button>
+                <button type="button" class="galleryButtons">
+                    <img class="active-preview" src="/src/assets/miniHood.jpg" alt="черное худи колеса" width="50px"
+                        height="50px">
+                </button>
+                <button type="button" class="galleryButtons">
+                    <img src="/src/assets/Man.jpg" alt="парень в черном худи" width="50px" height="50px">
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h4>
+                Футболка "Эволюционируй или сдохни"
+            </h4>
+            <div class="money">
+                <div class="purchase">
+                    <div class="cost">
+                        100 баллов
+                    </div>
+                    <button class="button" type="button">
+                        Заказать
+                    </button>
+                </div>
+
+                <div class="balance">
+                    <div class="leftBalance">
+                        <div class="balance-text">Твой баланс:</div>
+                        <div class="numb">
+                            3 945 баллов
+                        </div>
+                    </div>
+                    <div class="shop_icon">
+                    </div>
+                </div>
+            </div>
+            <div class="buy">
+                <div class="color">
+                    <span class="colorSize">Цвета:</span>
+                    <div class="radiocolor">
+                        <label class="colorLabel checked">
+                            <span class="colorInputWrapper">
+                                <input class="radio" type="radio" id="color-1" name="color" value="blue" checked />
+                                <span class="sizeLabelBox blue"></span>
+                            </span>
+                            <span class="sizeLabelSpan">Синий</span>
+                        </label>
+
+                        <label class="colorLabel">
+                            <span class="colorInputWrapper">
+                                <input class="radio" type="radio" id="color-2" name="color" value="beige" />
+                                <span class="sizeLabelBox  beige"></span>
+                            </span>
+                            <span class="sizeLabelSpan">Бежевый</span>
+                        </label>
+
+                        <label class="colorLabel">
+                            <span class="colorInputWrapper">
+                                <input class="radio" type="radio" id="color-3" name="color" value="grey" />
+                                <span class="sizeLabelBox  grey"></span>
+                            </span>
+                            <span class="sizeLabelSpan">Серый</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <span class="colorSize">Размер:</span>
+                    <div class="sizeWrapper">
+                        <label class="sizeLabel  checked">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" label="S" type="radio" id="s-size" name="size" value="S" checked />
+
+                            </span>
+                            <span class="sizeLabelSpan">S</span>
+                        </label>
+
+                        <label class="sizeLabel">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" label="M" type="radio" id="m-size" name="size" value="M" />
+
+                            </span>
+                            <span class="sizeLabelSpan">M</span>
+                        </label>
+
+                        <label class="sizeLabel">
+                            <span class="sizeInputWrapper">
+                                <input class="radio" label="L" type="radio" id="l-size" name="size" value="L" />
+
+                            </span>
+                            <span class="sizeLabelSpan">L</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="details">
+                    <div>
+                        Детали:
+                        <div class="words">
+                            Брендированная толстовка от Qazaq
+                            Republic. Материал: Хлопок 80%, Вискоза 20%
+                        </div>
+                    </div>
+                    <div class="material">
+                        Как выбрать размер:
+                        <div class="howChooseText">
+                            Написать дяде Рику для уточнения.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
