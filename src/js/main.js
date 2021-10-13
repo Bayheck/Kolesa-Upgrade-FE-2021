@@ -148,13 +148,13 @@ const accessories = [
     },
 ];
 
-function onOverlay() {
+const onOverlay = () => {
     document.getElementById('overlay').style.display = 'block';
-}
+};
 
-function offOverlay() {
+const offOverlay = () => {
     document.getElementById('overlay').style.display = 'none';
-}
+};
 
 const makeProductCard = (title, image, price, isNew, id) => ` <div class="card" data-index = "${id}">
     <div class="image">
@@ -320,14 +320,14 @@ const sortByNew = (a, b) => {
 
 const merged = accessories.concat(clothes);
 
-function closeModal(e) {
+const closeModal = (e) => {
     if (e.target.closest('.exit_icon')) {
         offOverlay();
         e.target.closest('.exit_icon').parentNode.parentNode.remove();
     }
-}
+};
 
-function openModal(event) {
+const openModal = (event) => {
     onOverlay();
     const { index } = event.target.closest('.card').dataset;
 
@@ -340,7 +340,7 @@ function openModal(event) {
         div.removeEventListener('click', closeModal);
     });
     document.querySelector('body').append(div);
-}
+};
 
 const modalCreator = () => {
     document.querySelectorAll('.card').forEach((card) => {
@@ -362,10 +362,6 @@ merged.forEach((card) => {
 modalCreator();
 
 const cardsDisplay = (event) => {
-    if (event.pointerId === -1) {
-        return;
-    }
-
     const categoryKey = event.target.dataset.key;
     let cards;
 
@@ -391,6 +387,6 @@ const cardsDisplay = (event) => {
     modalCreator();
 };
 
-document.querySelectorAll('.js_radio_button').forEach((button) => {
-    button.addEventListener('click', cardsDisplay);
+document.querySelectorAll('.category').forEach((button) => {
+    button.addEventListener('change', cardsDisplay);
 });
